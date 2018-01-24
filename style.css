@@ -145,3 +145,36 @@ p {
     font-size: 15px;
     line-height: 100%;
 }
+#Standard {
+    position: absolute;
+    right: 0;
+    top:0;
+}
+
+#textSTD {
+    position: absolute;
+    bottom:0;
+    height: 48%;
+    width: 100%;
+    line-height: 80%;
+}
+#h1small{
+        text-align: center;
+    font-family: Roboto;
+    font-size: 15px;
+
+}
+#h2small{
+        text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+
+}
+#psmall{
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+
+}
+
+
