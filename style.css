@@ -84,6 +84,7 @@ img.logo {
     background-color: white;
     box-shadow: 5px 5px 10px #cccccc;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .grid-item:hover {
@@ -145,36 +146,120 @@ p {
     font-size: 15px;
     line-height: 100%;
 }
+
 #Standard {
     position: absolute;
     right: 0;
-    top:0;
+    top: 0;
 }
 
 #textSTD {
     position: absolute;
-    bottom:0;
+    bottom: 0;
     height: 48%;
     width: 100%;
     line-height: 80%;
 }
-#h1small{
-        text-align: center;
+
+#h1small {
+    text-align: center;
     font-family: Roboto;
     font-size: 15px;
-
 }
-#h2small{
-        text-align: center;
+
+#h2small {
+    text-align: center;
     font-family: Roboto;
     font-size: 12px;
-
 }
-#psmall{
+
+#psmall {
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
-
 }
 
+#textSTDx2 {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    height: 48%;
+    width: 90%;
+    line-height: 80%;
+}
 
+#Standardx2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#textLGV {
+    position: absolute;
+    bottom: 70px;
+    line-height: 90%;
+}
+
+#textLGV p {
+    text-align: center;
+}
+
+#lgVertical {
+    position: absolute;
+    top: -40px;
+    left: 0;
+}
+
+#portrait {
+    position: absolute;
+    top: 190px;
+    width: 110px;
+    left: 45px;
+}
+
+#portrait:hover {
+    width: 130px;
+    left: 35px;
+    top: 180px;
+}
+
+#h1medium {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+#h2medium {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+hr {
+    position: absolute;
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+    height: 1px;
+    bottom: 50px;
+    background: grey;
+    border: 0;
+}
+
+#followers {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 50%;
+    left:15%;
+    color:grey;
+}
+
+#number {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 50%;
+    left:45%;
+    color:dimgrey;
+}
