@@ -251,8 +251,8 @@ hr {
     bottom: 10px;
     text-align: center;
     width: 50%;
-    left:15%;
-    color:grey;
+    left: 15%;
+    color: grey;
 }
 
 #number {
@@ -260,6 +260,69 @@ hr {
     bottom: 10px;
     text-align: center;
     width: 50%;
-    left:45%;
-    color:dimgrey;
+    left: 45%;
+    color: dimgrey;
 }
+
+#first {
+    display: block;
+    position: relative;
+    background-color: #F27968;
+    height: 60px;
+    top: 80px;
+    left: -10px;
+    margin: auto;
+    width: 1300px;
+}
+
+#second {
+    display: block;
+    position: absolute;
+    background-color: #f99b8e;
+    height: 100%;
+    width: 70%;
+    left: 15%;
+}
+
+#secondP {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    height: 30%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 5px;
+}
+#secondH1{
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    height: 30%;
+    width: 10%;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left:40px;
+
+}
+#star{
+    width:30px;
+    top:15px;
+    left:15px;
+    position:absolute;
+}
+#dot1,#dot2,#dot3{
+    width:15px;
+    right:130px;
+    top:22px;
+    position:absolute;
+    display:block;
+}
+#dot2{
+    right:100px;
+}
+#dot3{
+    right:70px;
+}
+
