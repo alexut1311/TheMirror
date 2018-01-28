@@ -28,10 +28,10 @@ div.header {
     position: absolute;
     background-color: #F27968;
     height: 50px;
-    top: 0;
     right: 0;
     left: 0;
     width: 100%;
+    top: 0;
 }
 
 li {
@@ -284,7 +284,7 @@ hr {
     left: 15%;
 }
 
-#secondP {
+p.secondP {
     text-align: center;
     color: white;
     font-size: 17px;
@@ -294,7 +294,8 @@ hr {
     position: absolute;
     top: 5px;
 }
-#secondH1{
+
+#secondH1 {
     text-align: center;
     color: white;
     font-size: 17px;
@@ -303,26 +304,158 @@ hr {
     display: block;
     position: absolute;
     top: 8px;
-    left:40px;
-
-}
-#star{
-    width:30px;
-    top:15px;
-    left:15px;
-    position:absolute;
-}
-#dot1,#dot2,#dot3{
-    width:15px;
-    right:130px;
-    top:22px;
-    position:absolute;
-    display:block;
-}
-#dot2{
-    right:100px;
-}
-#dot3{
-    right:70px;
+    left: 40px;
 }
 
+#star {
+    width: 30px;
+    top: 15px;
+    left: 15px;
+    position: absolute;
+}
+
+#dot1,
+#dot2,
+#dot3 {
+    width: 15px;
+    right: 130px;
+    top: 22px;
+    position: absolute;
+    display: block;
+    cursor: pointer;
+}
+
+#dot2 {
+    right: 100px;
+}
+
+#dot3 {
+    right: 70px;
+}
+
+#mail {
+    position: absolute;
+    display: block;
+    left: 100px;
+    top: 0;
+    width: 30px;
+    background: #f99b8e;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mailText {
+    position: absolute;
+    display: block;
+    left: 170px;
+    top: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+#search {
+    position: absolute;
+    display: block;
+    left: 400px;
+    top: 0;
+    width: 30px;
+    background: #f99b8e;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#searchBar {
+    position: absolute;
+    display: block;
+    left: 470px;
+    top: 10px;
+    height: 25px;
+    background: none;
+    border: 0;
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+::placeholder {
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#searchBar:focus {
+    outline: none !important;
+    border: 0;
+    box-shadow: 0;
+}
+
+img.media {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 30px;
+    background: #f99b8e;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 500;
+}
+
+div.footer {
+    display: block;
+    position: absolute;
+    background-color: #F27968;
+    height: 50px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 150px;
+}
+
+#copyright {
+    position: absolute;
+    display: block;
+    right: 170px;
+    top: 5px;
+    color: white;
+    font-size: 15px;
+    font-family: Roboto;
+    font-weight: 100;
+}
+
+li.bottomMenu {
+    color: white;
+    font-family: Roboto;
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none !important;
+    display: inline;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+ul.bottomMenu {
+    display: block;
+    position: absolute;
+    list-style: none;
+    left: 100px;
+    top: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+#links {
+    color: white;
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    top: -3px;
+    left: 50px;
+}
