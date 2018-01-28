@@ -406,13 +406,13 @@ img.media {
 
 div.footer {
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: #F27968;
     height: 50px;
     right: 0;
     left: 0;
+    bottom:0;
     width: 100%;
-    margin-top: 150px;
 }
 
 #copyright {
