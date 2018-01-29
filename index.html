@@ -3,11 +3,16 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet">
+    <!--Roboto Font link-->
     <link href="style.css" type="text/css" rel="stylesheet">
+    <!--link catre css-->
     <script src="jquery-3.2.1.js"></script>
+    <!--link catre jquery-->
 
     <script type="text/javascript" src="script.js"></script>
+    <!--link catre javascript-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!--libraria pentru pozitionarea automata a elementelor in sistem de grid -->
 
 
     <title>
@@ -19,7 +24,9 @@
 <body>
 
     <div class="header">
+        <!--bara de header impreuna cu fiecare element (e-mail,search,social media)-->
         <img id="arrow" src="arrow.png">
+        <!--sageata care indica meniul selectat-->
         <img id="mail" src="mail.png">
         <h1 id="mailText">lusterko.em.blog@gmail.com</h1>
         <img id="search" src="search.png">
@@ -32,6 +39,7 @@
 
     </div>
     <div class="menu">
+        <!--meniul principal-->
         <ul>
             <li>POSTS</li>
             <li>REVIEWS</li>
@@ -46,12 +54,15 @@
     </div>
     <img class="logo" src="LOGO.png">
     <div id="first">
+        <!--bara de stiri-->
         <img id="dot1" src="dotFull.png">
+        <!--butoane pentru indicarea indexului-->
         <img id="dot2" src="dotHollow.png">
         <img id="dot3" src="dotHollow.png">
         <img id="star" src="star.png">
         <h1 id="secondH1">HOT NEWS</h1>
         <div id="second">
+            <!--stirile-->
             <p class="secondP" style="display:block">A road-tripper rescued two abandoned puppies and took them on a 30,000-mile journey through 35 US states.</p>
             <p class="secondP" style="display:none">New Zealand is planning on eliminating its gas emissions by 2050, starting by planting 100 million trees per year.</p>
             <p class="secondP" style="display:none">Juice Company dumped orange peels in a deforested area. 16 years later, it's no longer deforested.</p>
@@ -60,8 +71,10 @@
 
 
     <div class="grid">
+        <!--gridul cu articole-->
         <!--.............................................................................................-->
-
+        <!--gridul are 4 tipuri de elemente . dimensiunile sunt setate prin css si aplicate prin numele clasei
+. Exemplu "grid-item grid-item--width3 grid-item--height2" are lungimea width3 si inaltimea height2 adica 860*250 px. fiecare coloana are 220px lungime .elementul de baza are  200px lungime. un element de doua ori mai lat va avea lungimea de 420px, se ia in considerare lungimea de baza*2 + 20px(spatiul dintre elemente) pentru pozitionarea corecta a gridului  -->
         <div class="grid-item grid-item--width3 grid-item--height2">
             <div id="textLGH">
                 <h1>TOP 10: Indoor Plants</h1>

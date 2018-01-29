@@ -1,5 +1,6 @@
 body {
     background: #F4F2F2;
+
 }
 
 #arrow {
@@ -10,7 +11,7 @@ body {
     width: 30px;
 }
 
-div.menu {
+div.menu { 
     position: absolute;
     top: 50px;
     width: 100%;
