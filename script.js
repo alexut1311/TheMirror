@@ -46,7 +46,7 @@ function dayNight(hour,timezone)
 }
 function weather(city){
     $.ajax({
-        url: "http://autocomplete.wunderground.com/aq?query="+city+"&cb=call=?",
+        url: "https://autocomplete.wunderground.com/aq?query="+city+"&cb=call=?",
         dataType: 'jsonp',
         success: function (parsed_json1) {
             cityId=parsed_json1.RESULTS[0].zmw;
@@ -54,7 +54,7 @@ function weather(city){
             $("#cityId").text(cityId);
             $("#cityName").text(cityName);
                $.ajax({
-        url: "http://api.wunderground.com/api/6d43277f9c88de3d/conditions/q/zmw:"+$("#cityId").text()+".json",
+        url: "https://api.wunderground.com/api/6d43277f9c88de3d/conditions/q/zmw:"+$("#cityId").text()+".json",
         dataType: "jsonp",
         success: function (parsed_json2) {
             hour=parsed_json2.current_observation.observation_time.substring(parsed_json2.current_observation.observation_time.indexOf(",")+1,parsed_json2.current_observation.observation_time.indexOf(":"));
