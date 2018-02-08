@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" type="text/css" rel="stylesheet">
+    <!--Roboto Font link-->
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <!--link catre css-->
+    <script src="jquery-3.2.1.js"></script>
+    <!--link catre jquery-->
+
+    <script type="text/javascript" src="script.js"></script>
+    <!--link catre javascript-->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <!--libraria pentru pozitionarea automata a elementelor in sistem de grid -->
+
+
+    <title>
+        WEBSITE
+    </title>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <!--bara de header impreuna cu fiecare element (e-mail,search,social media)-->
+        <img id="arrow" src="arrow.png" style="right:598px">
+        <!--sageata care indica meniul selectat-->
+        <img id="mail" src="mail.png">
+        <h1 id="mailText">lusterko.em.blog@gmail.com</h1>
+        <img id="search" src="search.png">
+        <input type="text" placeholder="Search.." id="searchBar">
+        <a href="https://www.facebook.com/"><img class="media" src="facebook.png" style="right:250px"></a>
+        <a href="https://twitter.com/"><img class="media" src="twitter.png" style="right:200px"></a>
+        <a href="https://plus.google.com/"><img class="media" src="google plus.png" style="right:150px"></a>
+        <a href="https://www.youtube.com/"><img class="media" src="youtube.png" style="right:100px"></a>
+
+
+    </div>
+    <div class="menu">
+        <!--meniul principal-->
+        <ul>
+            <a href="index.html"><li>POSTS</li></a>
+            <li>WEATHER</li>
+            <li>REVIEWS</li>
+            <li>SWATCHES</li>
+            <li>PREVIEWS</li>
+            <li>GUIDES</li>
+            <li>CONTACT</li>
+
+
+        </ul>
+
+    </div>
+    <img class="logo" src="LOGO.png">
+
+
+
+
+    <div class="footer">
+        <p id="copyright">© Copyright 2018. All Rights Reserved</p>
+        <p id="links">Links: </p>
+        <ul class="bottomMenu">
+            <li class="bottomMenu">posts</li>
+            <li class="bottomMenu">weather</li>
+            <li class="bottomMenu">reviews</li>
+            <li class="bottomMenu">swatches</li>
+            <li class="bottomMenu">previews</li>
+            <li class="bottomMenu">guides</li>
+            <li class="bottomMenu">contact</li>
+
+
+        </ul>
+    </div>
+        <input type="text" placeholder="Search City" id="weathersearch">
+    <button id="myBtn" >Button</button>
+
+    <div id="now"><h1 id="city"></h1><h2 id="time"></h2> <img id="wicon" src=""><h2 id="grad"></h2><h2 id="wiconName"></h2></div>
+    <div id="dayOne"></div>
+    <div id="dayTwo"></div>
+    <div id="dayThree"></div>
+
+    <p id="cityName"></p>
+    <p id="cityId"></p>
+
+</body>
+
+</html>

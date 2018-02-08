@@ -1,17 +1,23 @@
 body {
     background: #F4F2F2;
-
 }
+
+a {
+    text-decoration: none;
+}
+
+
+/* 690,598,498,390,280,178,88*/
 
 #arrow {
     position: absolute;
     bottom: -14px;
-    right: 630px;
+    right: 690px;
     z-index: 100;
     width: 30px;
 }
 
-div.menu { 
+div.menu {
     position: absolute;
     top: 50px;
     width: 100%;
@@ -44,7 +50,7 @@ li {
     display: inline;
     text-align: center;
     position: relative;
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 10px;
     padding-right: 10px;
     cursor: pointer;
@@ -60,8 +66,8 @@ li:active {
 
 ul {
     display: block;
-    max-width: 700px;
-    min-width: 700px;
+    max-width: 800px;
+    min-width: 800px;
     position: relative;
     margin-top: 35px;
     margin-left: auto;
@@ -413,7 +419,7 @@ div.footer {
     height: 50px;
     right: 0;
     left: 0;
-    bottom:0;
+    bottom: 0;
     width: 100%;
 }
 
@@ -461,3 +467,114 @@ ul.bottomMenu {
     top: -3px;
     left: 50px;
 }
+
+#weathersearch {
+    position: relative;
+    display: block;
+    margin: auto;
+    top: 70px;
+    height: 50px;
+    width:40%;
+    background: white;
+    border: 0;
+    color: dimgrey;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 100;
+    box-shadow: 7px 7px 12px lightgrey;
+}
+
+#weathersearch::placeholder {
+    color: dimgrey;
+    font-family: Roboto;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#weathersearch:focus {
+    outline: none !important;
+    border: 0;
+    box-shadow: 0;
+}
+#now,#dayOne,#dayTwo,#dayThree{
+    background-color: white;
+    margin: 40px;
+    position:absolute;
+    display::block;
+        box-shadow: 7px 7px 12px lightgrey;
+
+}
+#now{
+    position:relative;
+    width:500px;
+    height:300px;
+    margin: auto;
+    top:100px;
+}
+#city{
+    position:absolute;
+    display: block;
+    font-family: Roboto;
+    font-weight: 100;
+    color:dimgrey;
+    left:25%;
+    width:50%;
+    text-align: center;
+}
+#wicon{
+    width:150px;
+    right:70px;
+    position: absolute;
+    display: block;
+    top:90px;
+    border-left: 1px solid #a8a8a8;
+    padding-left: 30px;
+}
+#grad{
+    position:absolute;
+    display: block;
+    font-family: Roboto;
+    font-weight: 100;
+    color:dimgrey;
+    left:23%;
+    width:120px;
+    text-align: center;
+    font-size: 70px;
+    top:63px;
+}
+#time{
+    position:absolute;
+    display: block;
+    font-family: Roboto;
+    font-weight: 100;
+    color:dimgrey;
+    left:25%;
+    width:50%;
+    text-align: center;
+    top:45px;
+}
+#wiconName{
+    position:absolute;
+    display: block;
+    font-family: Roboto;
+    font-weight: 100;
+    color:dimgrey;
+    left:120px;
+    width:120px;
+    text-align: center;
+    top:190px;
+    font-size: 18px;
+}
+#cityName{
+    display: none;
+}
+#cityId{
+    display: none;
+}
+#myBtn{
+    display: block;
+    position: absolute;
+    right:400px;
+    top:230px;
+}
+
