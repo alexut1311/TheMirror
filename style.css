@@ -64,7 +64,7 @@ li:active {
     color: #F27968;
 }
 
-ul {
+ul.menu {
     display: block;
     max-width: 800px;
     min-width: 800px;
@@ -482,6 +482,8 @@ ul.bottomMenu {
     font-size: 30px;
     font-weight: 100;
     box-shadow: 7px 7px 12px lightgrey;
+    padding-left: 30px;
+    
 }
 
 #weathersearch::placeholder {
@@ -489,6 +491,7 @@ ul.bottomMenu {
     font-family: Roboto;
     font-size: 30px;
     font-weight: 100;
+    padding-left: 5px;
 }
 
 #weathersearch:focus {
@@ -577,4 +580,12 @@ ul.bottomMenu {
     right:400px;
     top:230px;
 }
-
+#searchw{
+    width:50px;
+    position: relative;
+    display: block;
+    margin-left:auto;
+    margin-right: 30%;
+    top:20px;
+    cursor:pointer;
+}

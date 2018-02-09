@@ -88,6 +88,46 @@ function weather(city){
     
 }
 
+function getData(){
+var i;
+ var out;
+var arr=[];
+$('#weathersearch').keyup(function(){
+arr=[];
+
+var value=$(this).val();           
+
+$.ajax({
+url:"http://autocomplete.wunderground.com/aq?&cb=call=?",
+dataType: "jsonp",
+data:{
+"query":value
+},
+crossDomain: true,
+success: function (parsed_json) {
+var c =$.each(parsed_json.RESULTS,function(i,item){
+out=(parsed_json.RESULTS[i].name);
+    if(parsed_json.RESULTS[i].type=="city"&& arr.length<=9)
+    {arr.push(out);}
+
+ });
+ $( "#weathersearch" ).autocomplete({
+ source:arr,
+
+
+});
+
+},
+ error: function (xhr, ajaxOptions, thrownError) {
+alert(xhr.status);
+alert(thrownError);
+    }
+
+  }); 
+      });
+
+}
+
 $(document).ready(function () {
     "use strict";
     win();
@@ -161,12 +201,14 @@ $(document).ready(function () {
     //    document.getElementById("myBtn").click();
    // }
 //});
-$("#myBtn").click(function(){
-    weather(input.value);
+
+
+getData();
+$("#searchw").click(function(){
+ weather(input.value);
 });
 
-
-
+    
 });
 
 

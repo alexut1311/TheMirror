@@ -13,6 +13,9 @@
     <!--link catre javascript-->
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
     <!--libraria pentru pozitionarea automata a elementelor in sistem de grid -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="ui.css">
+
 
 
     <title>
@@ -40,7 +43,7 @@
     </div>
     <div class="menu">
         <!--meniul principal-->
-        <ul>
+        <ul class="menu">
             <a href="index.html"><li>POSTS</li></a>
             <li>WEATHER</li>
             <li>REVIEWS</li>
@@ -73,9 +76,8 @@
 
         </ul>
     </div>
-        <input type="text" placeholder="Search City" id="weathersearch">
-    <button id="myBtn" >Button</button>
-
+        <input type="text" placeholder="Search City..." id="weathersearch">
+        <img id="searchw" src="searchw.png">
     <div id="now"><h1 id="city"></h1><h2 id="time"></h2> <img id="wicon" src=""><h2 id="grad"></h2><h2 id="wiconName"></h2></div>
     <div id="dayOne"></div>
     <div id="dayTwo"></div>
