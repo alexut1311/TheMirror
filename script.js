@@ -66,6 +66,14 @@ function weather(city){
             }
             
             $("#city").text(cityName);
+            $("#hum").text(parsed_json2.current_observation.relative_humidity);
+            $("#wind").text(parsed_json2.current_observation.wind_dir+" "+parsed_json2.current_observation.wind_kph+" Km/h");
+            if (parsed_json2.current_observation.pressure_trend=="-")
+            {$("#pres").text(parsed_json2.current_observation.pressure_mb+" Mb "+"🡓");}
+            else
+            {$("#pres").text(parsed_json2.current_observation.pressure_mb+" Mb "+"🡑");}
+   
+            $("#vis").text(parsed_json2.current_observation.visibility_km+" Km");
             $("#grad").text(Math.round(parseFloat(parsed_json2.current_observation.temp_c))+"°");
             $("#time").text(parsed_json2.current_observation.observation_time.substring(parsed_json2.current_observation.observation_time.indexOf("on")+2,parsed_json2.current_observation.observation_time.lenght));
             if (dayNight(hour,timezone)==="day")
@@ -77,7 +85,11 @@ function weather(city){
                 {
                      $("#wicon").attr("src","");}
 
-                
+                 $("#humIcon").css("display","block");
+ $("#windIcon").css("display","block");
+ $("#presIcon").css("display","block");
+ $("#visIcon").css("display","block");
+
 
         }
     });
@@ -206,6 +218,7 @@ $(document).ready(function () {
 getData();
 $("#searchw").click(function(){
  weather(input.value);
+
 });
 
     
