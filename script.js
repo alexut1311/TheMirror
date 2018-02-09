@@ -98,7 +98,7 @@ arr=[];
 var value=$(this).val();           
 
 $.ajax({
-url:"http://autocomplete.wunderground.com/aq?&cb=call=?",
+url:"https://autocomplete.wunderground.com/aq?&cb=call=?",
 dataType: "jsonp",
 data:{
 "query":value
