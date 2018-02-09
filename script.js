@@ -35,7 +35,7 @@ function dayNight(hour,timezone)
         }
        if (timezone==="PM")
           {
-              if (parseInt(hour)>=8)
+              if (parseInt(hour)>=8 && parseInt(hour)<12)
                   return "night";
               else
                   return "day";
