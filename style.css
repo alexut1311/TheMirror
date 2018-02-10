@@ -514,6 +514,8 @@ ul.bottomMenu {
     height:300px;
     margin: auto;
     top:30px;
+        display: none;
+
 }
 #city{
     position:absolute;
@@ -632,6 +634,7 @@ ul.bottomMenu {
     height:300px;
     margin: auto;
     top:50px;
+    display: none;
 }
 #dayOne,#dayTwo,#dayThree{
     position:absolute;

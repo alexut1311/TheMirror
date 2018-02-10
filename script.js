@@ -89,40 +89,30 @@ function weatherNow(city){
  $("#windIcon").css("display","block");
  $("#presIcon").css("display","block");
  $("#visIcon").css("display","block");
-
+ $("#now").css("display","block");
 
         }
     });
-
-            
-        }
-    });
-    
-}
-function weatherDays(city){
 
     $.ajax({
-        url: "https://autocomplete.wunderground.com/aq?query="+city+"&cb=call=?",
-        dataType: 'jsonp',
-        success: function (parsed_json1) {
-               $.ajax({
         url: "https://api.wunderground.com/api/6d43277f9c88de3d/forecast/q/zmw:"+$("#cityId").text()+".json",
         dataType: "jsonp",
         success: function (parsed_json2) {
            for (i=1;i<=3;i++) {$("#grad"+i).text(Math.round(parseFloat(parsed_json2.forecast.simpleforecast.forecastday[i].high.celsius))+"°");             $("#time"+i).text(parsed_json2.forecast.simpleforecast.forecastday[i].date.weekday);
           $("#wicon"+i).attr("src","png/"+parsed_json2.forecast.simpleforecast.forecastday[i].icon+".png");
-          $("#wiconName"+i).text(parsed_json2.forecast.simpleforecast.forecastday[i].conditions);                         
+          $("#wiconName"+i).text(parsed_json2.forecast.simpleforecast.forecastday[i].conditions);                    $("#forecast").css("display","block");
+      
            }
 
 
 
         }
-    });
-
-            
+    });          
         }
     });
+    
 }
+
 
 function getData(){
 var i;
@@ -243,7 +233,6 @@ getData();
 $("#searchw").click(function(){
      weatherNow(input.value);
 
- weatherDays(input.value);
 
 
 });
